@@ -6,4 +6,8 @@ target 'ZXDProgressHUD' do
   # use_frameworks!
 
   # Pods for ZXDProgressHUD
+    pod 'AFNetworking', '3.1.0'
+    pod 'JLRoutes', '1.6'
+    pod 'MBProgressHUD', '0.9.2'
+
 end
