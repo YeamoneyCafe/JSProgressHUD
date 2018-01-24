@@ -98,7 +98,6 @@
 
 #pragma mark - 3.自定义方法
 //更换Window的rootViewController
-
 - (void)replaceWindowRootViewControoler:(UIViewController *)rootViewController
 {
     UIWindow* window = [UIApplication sharedApplication].delegate.window;
@@ -110,7 +109,6 @@
     } completion:^(BOOL finished) {
 
     }];
-//    [window setRootViewController:rootViewController];
 }
 
 

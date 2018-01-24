@@ -7,8 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B489187F201740BE00577DAF /* ZXDHomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = B489187E201740BE00577DAF /* ZXDHomeView.m */; };
+		B4891882201874F700577DAF /* YMProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = B4891881201874F700577DAF /* YMProgressHUD.m */; };
 		B4BA5F63201597FF00BBFF8F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B4BA5F62201597FF00BBFF8F /* Default-568h@2x.png */; };
-		B4BA5F662015B8FB00BBFF8F /* AppIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = B4BA5F652015B8FB00BBFF8F /* AppIcon.png */; };
+		B4BA5F662015B8FB00BBFF8F /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B4BA5F652015B8FB00BBFF8F /* icon.png */; };
 		B4BA5F6D2015BE2800BBFF8F /* UIView+ZXDStatusHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = B4BA5F6C2015BE2800BBFF8F /* UIView+ZXDStatusHUD.m */; };
 		B4BA5F742015BFDC00BBFF8F /* ZXDRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4BA5F732015BFDC00BBFF8F /* ZXDRootViewController.m */; };
 		B4BA5F772015C09500BBFF8F /* ZXDRootNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = B4BA5F762015C09500BBFF8F /* ZXDRootNavigationController.m */; };
@@ -22,17 +24,22 @@
 		B4EC798F20158E8200BBD8C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4EC798E20158E8200BBD8C9 /* Assets.xcassets */; };
 		B4EC799220158E8200BBD8C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4EC799020158E8200BBD8C9 /* LaunchScreen.storyboard */; };
 		B4EC799520158E8200BBD8C9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B4EC799420158E8200BBD8C9 /* main.m */; };
+		BC57AAA71A4219FBE0188012 /* libPods-ZXDProgressHUD.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8825C147A83129C4ADD71C84 /* libPods-ZXDProgressHUD.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		36D3FD0C7FA6634C3437EC84 /* Pods-ZXDProgressHUD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZXDProgressHUD.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZXDProgressHUD/Pods-ZXDProgressHUD.debug.xcconfig"; sourceTree = "<group>"; };
 		7CD0BF9DC80C06A1775CA8C4 /* Pods-ZXDProgressHUD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZXDProgressHUD.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZXDProgressHUD/Pods-ZXDProgressHUD.release.xcconfig"; sourceTree = "<group>"; };
 		8825C147A83129C4ADD71C84 /* libPods-ZXDProgressHUD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZXDProgressHUD.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B489187D201740BE00577DAF /* ZXDHomeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZXDHomeView.h; sourceTree = "<group>"; };
+		B489187E201740BE00577DAF /* ZXDHomeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZXDHomeView.m; sourceTree = "<group>"; };
+		B4891880201874F700577DAF /* YMProgressHUD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMProgressHUD.h; sourceTree = "<group>"; };
+		B4891881201874F700577DAF /* YMProgressHUD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMProgressHUD.m; sourceTree = "<group>"; };
 		B4BA5F5F2015974900BBFF8F /* ZXD-PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZXD-PrefixHeader.pch"; sourceTree = "<group>"; };
 		B4BA5F612015977F00BBFF8F /* ZXDPublic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZXDPublic.h; sourceTree = "<group>"; };
 		B4BA5F62201597FF00BBFF8F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		B4BA5F642015B41700BBFF8F /* libinfo.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libinfo.tbd; path = usr/lib/libinfo.tbd; sourceTree = SDKROOT; };
-		B4BA5F652015B8FB00BBFF8F /* AppIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AppIcon.png; sourceTree = "<group>"; };
+		B4BA5F652015B8FB00BBFF8F /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		B4BA5F6B2015BE2800BBFF8F /* UIView+ZXDStatusHUD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+ZXDStatusHUD.h"; sourceTree = "<group>"; };
 		B4BA5F6C2015BE2800BBFF8F /* UIView+ZXDStatusHUD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+ZXDStatusHUD.m"; sourceTree = "<group>"; };
 		B4BA5F722015BFDC00BBFF8F /* ZXDRootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZXDRootViewController.h; sourceTree = "<group>"; };
@@ -64,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC57AAA71A4219FBE0188012 /* libPods-ZXDProgressHUD.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +151,8 @@
 		B4BA5F6A2015BDA500BBFF8F /* ZXDStatusHUDView */ = {
 			isa = PBXGroup;
 			children = (
+				B4891880201874F700577DAF /* YMProgressHUD.h */,
+				B4891881201874F700577DAF /* YMProgressHUD.m */,
 				B4BA5F6B2015BE2800BBFF8F /* UIView+ZXDStatusHUD.h */,
 				B4BA5F6C2015BE2800BBFF8F /* UIView+ZXDStatusHUD.m */,
 			);
@@ -184,6 +194,8 @@
 		B4BA5F7A2015C0D800BBFF8F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				B489187D201740BE00577DAF /* ZXDHomeView.h */,
+				B489187E201740BE00577DAF /* ZXDHomeView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -234,7 +246,7 @@
 			isa = PBXGroup;
 			children = (
 				B4BA5F62201597FF00BBFF8F /* Default-568h@2x.png */,
-				B4BA5F652015B8FB00BBFF8F /* AppIcon.png */,
+				B4BA5F652015B8FB00BBFF8F /* icon.png */,
 				B4EC798420158E8200BBD8C9 /* ZXDProgressHUD */,
 				B4EC798320158E8200BBD8C9 /* Products */,
 				DFA41E00635C204188B48D53 /* Pods */,
@@ -329,7 +341,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4BA5F662015B8FB00BBFF8F /* AppIcon.png in Resources */,
+				B4BA5F662015B8FB00BBFF8F /* icon.png in Resources */,
 				B4EC799220158E8200BBD8C9 /* LaunchScreen.storyboard in Resources */,
 				B4BA5F63201597FF00BBFF8F /* Default-568h@2x.png in Resources */,
 				B4EC798F20158E8200BBD8C9 /* Assets.xcassets in Resources */,
@@ -361,9 +373,12 @@
 			files = (
 			);
 			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ZXDProgressHUD/Pods-ZXDProgressHUD-resources.sh",
+				"${PODS_ROOT}/SVProgressHUD/SVProgressHUD/SVProgressHUD.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -402,8 +417,10 @@
 				B4BA5F742015BFDC00BBFF8F /* ZXDRootViewController.m in Sources */,
 				B4EC798720158E8200BBD8C9 /* AppDelegate.m in Sources */,
 				B4BA5F772015C09500BBFF8F /* ZXDRootNavigationController.m in Sources */,
+				B489187F201740BE00577DAF /* ZXDHomeView.m in Sources */,
 				B4BA5F882015C2AE00BBFF8F /* ZXDWelcomeVC.m in Sources */,
 				B4BA5F7E2015C11600BBFF8F /* ZXDHomeVC.m in Sources */,
+				B4891882201874F700577DAF /* YMProgressHUD.m in Sources */,
 				B4BA5F6D2015BE2800BBFF8F /* UIView+ZXDStatusHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -541,7 +558,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X5ZHND4URF;
-				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = "$(SRCROOT)/ZXDProgressHUD/ZXD-PrefixHeader.pch";
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ZXDProgressHUD/Supporting Files/ZXD-PrefixHeader.pch";
 				INFOPLIST_FILE = "ZXDProgressHUD/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -558,7 +577,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = X5ZHND4URF;
-				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = "$(SRCROOT)/ZXDProgressHUD/ZXD-PrefixHeader.pch";
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ZXDProgressHUD/Supporting Files/ZXD-PrefixHeader.pch";
 				INFOPLIST_FILE = "ZXDProgressHUD/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

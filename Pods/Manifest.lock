@@ -16,17 +16,20 @@ PODS:
     - AFNetworking/NSURLSession
   - JLRoutes (1.6)
   - MBProgressHUD (0.9.2)
+  - SVProgressHUD (2.2.2)
 
 DEPENDENCIES:
   - AFNetworking (= 3.1.0)
   - JLRoutes (= 1.6)
   - MBProgressHUD (= 0.9.2)
+  - SVProgressHUD
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   JLRoutes: 435d791422e96c9b9b5e1c4db1aedb3ae1b1a08f
   MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
+  SVProgressHUD: 59b2d3dabacbd051576d21d32293ca7228dc18b0
 
-PODFILE CHECKSUM: c1f2891447f55cd5f853467123f239d150161055
+PODFILE CHECKSUM: 2ff809ea42847461cae7b1a285a72bea0fc341d2
 
 COCOAPODS: 1.4.0.beta.2

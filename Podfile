@@ -9,5 +9,6 @@ target 'ZXDProgressHUD' do
     pod 'AFNetworking', '3.1.0'
     pod 'JLRoutes', '1.6'
     pod 'MBProgressHUD', '0.9.2'
+    pod 'SVProgressHUD'
 
 end

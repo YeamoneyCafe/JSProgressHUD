@@ -10,6 +10,6 @@
 
 @interface UIView (ZXDStatusHUD)
 
-
+- (void)ZXD_showText:(NSString* )text customView:(UIView* )view HUDWeight:(CGFloat )weight HUDHeight:(CGFloat)height onView:(UIView* )onview;
 
 @end
