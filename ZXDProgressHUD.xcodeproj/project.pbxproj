@@ -7,8 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B4477BED201F298E00B6E46F /* YMProductAssignApplyConfirmView.m in Sources */ = {isa = PBXBuildFile; fileRef = B4477BEA201F298E00B6E46F /* YMProductAssignApplyConfirmView.m */; };
+		B4477BEE201F298E00B6E46F /* YMProductAssignApplyConfirmView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4477BEC201F298E00B6E46F /* YMProductAssignApplyConfirmView.xib */; };
 		B489187F201740BE00577DAF /* ZXDHomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = B489187E201740BE00577DAF /* ZXDHomeView.m */; };
 		B4891882201874F700577DAF /* YMProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = B4891881201874F700577DAF /* YMProgressHUD.m */; };
+		B48918892019B29E00577DAF /* KeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = B48918862019B29E00577DAF /* KeychainItemWrapper.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		B489188A2019B29E00577DAF /* YMDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = B48918882019B29E00577DAF /* YMDevice.m */; };
+		B489188D2019C08C00577DAF /* UIViewController+YMTool.m in Sources */ = {isa = PBXBuildFile; fileRef = B489188B2019C08C00577DAF /* UIViewController+YMTool.m */; };
 		B4BA5F63201597FF00BBFF8F /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B4BA5F62201597FF00BBFF8F /* Default-568h@2x.png */; };
 		B4BA5F662015B8FB00BBFF8F /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B4BA5F652015B8FB00BBFF8F /* icon.png */; };
 		B4BA5F6D2015BE2800BBFF8F /* UIView+ZXDStatusHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = B4BA5F6C2015BE2800BBFF8F /* UIView+ZXDStatusHUD.m */; };
@@ -31,10 +36,19 @@
 		36D3FD0C7FA6634C3437EC84 /* Pods-ZXDProgressHUD.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZXDProgressHUD.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZXDProgressHUD/Pods-ZXDProgressHUD.debug.xcconfig"; sourceTree = "<group>"; };
 		7CD0BF9DC80C06A1775CA8C4 /* Pods-ZXDProgressHUD.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZXDProgressHUD.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZXDProgressHUD/Pods-ZXDProgressHUD.release.xcconfig"; sourceTree = "<group>"; };
 		8825C147A83129C4ADD71C84 /* libPods-ZXDProgressHUD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZXDProgressHUD.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4477BEA201F298E00B6E46F /* YMProductAssignApplyConfirmView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMProductAssignApplyConfirmView.m; sourceTree = "<group>"; };
+		B4477BEB201F298E00B6E46F /* YMProductAssignApplyConfirmView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMProductAssignApplyConfirmView.h; sourceTree = "<group>"; };
+		B4477BEC201F298E00B6E46F /* YMProductAssignApplyConfirmView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YMProductAssignApplyConfirmView.xib; sourceTree = "<group>"; };
 		B489187D201740BE00577DAF /* ZXDHomeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZXDHomeView.h; sourceTree = "<group>"; };
 		B489187E201740BE00577DAF /* ZXDHomeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZXDHomeView.m; sourceTree = "<group>"; };
 		B4891880201874F700577DAF /* YMProgressHUD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMProgressHUD.h; sourceTree = "<group>"; };
 		B4891881201874F700577DAF /* YMProgressHUD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YMProgressHUD.m; sourceTree = "<group>"; };
+		B48918852019B29E00577DAF /* KeychainItemWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainItemWrapper.h; sourceTree = "<group>"; };
+		B48918862019B29E00577DAF /* KeychainItemWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainItemWrapper.m; sourceTree = "<group>"; };
+		B48918872019B29E00577DAF /* YMDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMDevice.h; sourceTree = "<group>"; };
+		B48918882019B29E00577DAF /* YMDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMDevice.m; sourceTree = "<group>"; };
+		B489188B2019C08C00577DAF /* UIViewController+YMTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+YMTool.m"; sourceTree = "<group>"; };
+		B489188C2019C08C00577DAF /* UIViewController+YMTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+YMTool.h"; sourceTree = "<group>"; };
 		B4BA5F5F2015974900BBFF8F /* ZXD-PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ZXD-PrefixHeader.pch"; sourceTree = "<group>"; };
 		B4BA5F612015977F00BBFF8F /* ZXDPublic.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZXDPublic.h; sourceTree = "<group>"; };
 		B4BA5F62201597FF00BBFF8F /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
@@ -87,6 +101,25 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		B48918832019B29E00577DAF /* YMDevice */ = {
+			isa = PBXGroup;
+			children = (
+				B48918842019B29E00577DAF /* GenericKeychain */,
+				B48918872019B29E00577DAF /* YMDevice.h */,
+				B48918882019B29E00577DAF /* YMDevice.m */,
+			);
+			path = YMDevice;
+			sourceTree = "<group>";
+		};
+		B48918842019B29E00577DAF /* GenericKeychain */ = {
+			isa = PBXGroup;
+			children = (
+				B48918852019B29E00577DAF /* KeychainItemWrapper.h */,
+				B48918862019B29E00577DAF /* KeychainItemWrapper.m */,
+			);
+			path = GenericKeychain;
+			sourceTree = "<group>";
+		};
 		B4BA5F5D2015969600BBFF8F /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -129,6 +162,9 @@
 		B4BA5F672015BA9100BBFF8F /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				B489188C2019C08C00577DAF /* UIViewController+YMTool.h */,
+				B489188B2019C08C00577DAF /* UIViewController+YMTool.m */,
+				B48918832019B29E00577DAF /* YMDevice */,
 			);
 			path = Tool;
 			sourceTree = "<group>";
@@ -155,6 +191,9 @@
 				B4891881201874F700577DAF /* YMProgressHUD.m */,
 				B4BA5F6B2015BE2800BBFF8F /* UIView+ZXDStatusHUD.h */,
 				B4BA5F6C2015BE2800BBFF8F /* UIView+ZXDStatusHUD.m */,
+				B4477BEB201F298E00B6E46F /* YMProductAssignApplyConfirmView.h */,
+				B4477BEA201F298E00B6E46F /* YMProductAssignApplyConfirmView.m */,
+				B4477BEC201F298E00B6E46F /* YMProductAssignApplyConfirmView.xib */,
 			);
 			path = ZXDStatusHUDView;
 			sourceTree = "<group>";
@@ -344,6 +383,7 @@
 				B4BA5F662015B8FB00BBFF8F /* icon.png in Resources */,
 				B4EC799220158E8200BBD8C9 /* LaunchScreen.storyboard in Resources */,
 				B4BA5F63201597FF00BBFF8F /* Default-568h@2x.png in Resources */,
+				B4477BEE201F298E00B6E46F /* YMProductAssignApplyConfirmView.xib in Resources */,
 				B4EC798F20158E8200BBD8C9 /* Assets.xcassets in Resources */,
 				B4EC798D20158E8200BBD8C9 /* Main.storyboard in Resources */,
 			);
@@ -411,11 +451,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4EC798A20158E8200BBD8C9 /* ViewController.m in Sources */,
+				B48918892019B29E00577DAF /* KeychainItemWrapper.m in Sources */,
 				B4EC799520158E8200BBD8C9 /* main.m in Sources */,
+				B489188D2019C08C00577DAF /* UIViewController+YMTool.m in Sources */,
 				B4BA5F8B2015C30100BBFF8F /* ZXDRootTabBarController.m in Sources */,
+				B4477BED201F298E00B6E46F /* YMProductAssignApplyConfirmView.m in Sources */,
 				B4BA5F852015C28C00BBFF8F /* ZXDLaunchVC.m in Sources */,
 				B4BA5F742015BFDC00BBFF8F /* ZXDRootViewController.m in Sources */,
 				B4EC798720158E8200BBD8C9 /* AppDelegate.m in Sources */,
+				B489188A2019B29E00577DAF /* YMDevice.m in Sources */,
 				B4BA5F772015C09500BBFF8F /* ZXDRootNavigationController.m in Sources */,
 				B489187F201740BE00577DAF /* ZXDHomeView.m in Sources */,
 				B4BA5F882015C2AE00BBFF8F /* ZXDWelcomeVC.m in Sources */,

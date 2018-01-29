@@ -11,6 +11,8 @@
 #import "ZXDHomeView.h"
 #import "UIView+ZXDStatusHUD.h"
 #import "YMProgressHUD.h"
+#import "UIViewController+YMTool.h"
+#import "YMProductAssignApplyConfirmView.h"
 
 @interface ZXDHomeVC ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -67,8 +69,6 @@
     self.tableView = tableView;
 
     self.curren = [[ZXDHomeView alloc] initWithFrame:self.view.frame];
-    
-    
 }
 
 - (void)reloadView
@@ -87,7 +87,7 @@
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 10;
+    return 11;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -135,12 +135,71 @@
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     
     UIImageView* customView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"login_infor_gesture"]];
-    customView.frame = CGRectMake(0, 0, 10, 10);
-    [self.view ZXD_showText:@"系统出错，正在排查" customView:customView HUDWeight:40 HUDHeight:10 onView:nil];
-//    [YMProgressHUD showText:@"系统出错，正在排查" image:[UIImage imageNamed:@"p2"] onView:self.view completion:^{
-//
-//    }];
-    
+    if (indexPath.section == 0) {
+        customView.frame = CGRectMake(0, 0, 28, 28);
+        [YMProgressHUD showText:@"网络无法连接" customeView:customView HUDMinSize:CGSizeZero onView:self.view completion:nil];
+    } else if (indexPath.section == 1)
+    {
+        customView.frame = CGRectMake(0, 0, 40, 40);
+        [YMProgressHUD showText:@"加载中" customeView:customView HUDMinSize:CGSizeZero onView:self.view completion:nil];
+    } else if (indexPath.section == 2)
+    {
+        customView.frame = CGRectMake(0, 0, 40, 17);
+        [YMProgressHUD showText:@"系统出错，正在排查" customeView:customView HUDMinSize:CGSizeMake(200, 104) onView:self.view completion:nil];
+    } else if (indexPath.section == 3) {
+        [YMProgressHUD showAlertMessage:@"告知当前状态，信息和方案等"];
+    } else if (indexPath.section == 4) {
+        UIViewController* topVC = [UIViewController ym_visibleViewController];
+        UIAlertController* alertView = [UIAlertController alertControllerWithTitle:nil message:@"非默认" preferredStyle:UIAlertControllerStyleActionSheet];
+        [alertView addAction:[UIAlertAction actionWithTitle:@"辅助操作" style:UIAlertActionStyleDefault handler:nil]];
+        [alertView addAction:[UIAlertAction actionWithTitle:@"主操作" style:UIAlertActionStyleCancel handler:nil]];
+        [alertView addAction:[UIAlertAction actionWithTitle:@"111操作" style:UIAlertActionStyleDestructive handler:nil]];
+        [topVC presentViewController:alertView animated:YES completion:nil];
+    } else if (indexPath.section == 5) {
+        UIViewController* topVC = [UIViewController ym_visibleViewController];
+        UIAlertController* alertView = [UIAlertController alertControllerWithTitle:nil message:@"非默认加输入框" preferredStyle:UIAlertControllerStyleAlert];
+        [alertView addAction:[UIAlertAction actionWithTitle:@"辅助操作" style:UIAlertActionStyleDefault handler:nil]];
+        [alertView addAction:[UIAlertAction actionWithTitle:@"主操作" style:UIAlertActionStyleCancel handler:nil]];
+        [alertView addTextFieldWithConfigurationHandler:^(UITextField * _Nonnull textField) {
+            NSLog(@"输入的内容为%@",textField.text);
+        }];
+        [topVC presentViewController:alertView animated:YES completion:nil];
+    } else if (indexPath.section == 6) {
+        [YMProgressHUD showAlertTitle:@"普通弹窗" message:@"告知当前状态，信息和方案等文字换行" cancelText:@"辅操作" affirmText:@"主操作" cancelBlock:^{
+            NSLog(@"执行取消、辅助操作");
+        } affirmblock:^{
+            NSLog(@"执行确认、主操作");
+        } alertShowcompletion:^{
+            NSLog(@"弹框以显示出来");
+        }];
+    } else if (indexPath.section == 7) {
+        [YMProgressHUD showAlertTitle:nil message:@"告知当前状态，信息和方案等文字换行" cancelText:@"辅操作" affirmText:@"主操作" cancelBlock:^{
+            NSLog(@"执行取消、辅助操作");
+        } affirmblock:^{
+            NSLog(@"执行确认、主操作");
+        } alertShowcompletion:^{
+            NSLog(@"弹框以显示出来");
+        }];
+    } else if (indexPath.section == 8) {
+//        [YMProgressHUD showAlertTitle:@"标题文字" message:@"告知当前状态，信息和方案等" buttonsText:@[@"选项一",@"选项二",@"选项三"]];
+        [YMProgressHUD showAlertTitle:@"标题文字" message:@"告知当前状态，信息和方案等" buttonsText:@[@"选项一",@"选项二",@"选项三"] completionblock:^(NSInteger index) {
+            if (index == 0) {
+                NSLog(@"点击选项一");
+            } else if (index == 1) {
+                NSLog(@"点击选项二");
+            } else if (index == 2) {
+                NSLog(@"点击选项三");
+            }
+        }];
+    } else if (indexPath.section == 9) {
+//        YMProductAssignApplyConfirmView* view = [YMProductAssignApplyConfirmView ym_viewWithFrame:CGRectMake(0, 0, 280, 239)];
+        YMProductAssignApplyConfirmView* view = [[NSBundle mainBundle] loadNibNamed:NSStringFromClass([YMProductAssignApplyConfirmView class]) owner:nil options:nil].lastObject;
+        view.center = CGPointMake(SCREEN_WIDTH/2, SCREEN_HEIGHT/2);
+        [view show];
+        
+    } else if (indexPath.section == 10) {
+        
+    }
 }
 
 #pragma mark - 5.Event Response

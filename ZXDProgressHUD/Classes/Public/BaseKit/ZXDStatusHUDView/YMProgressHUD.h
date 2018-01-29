@@ -16,12 +16,18 @@ typedef void(^completionblock)(void);
 + (void)showAPIError:(NSError *)error;
 //Alert提醒框
 + (void)showAlertMessage:(NSString *)message;
+//Alert提醒框、可设置按钮Text。
++ (void)showAlertMessage:(NSString *)message affirmText:(NSString *)affirmText;
+//Alert提醒框、可设置取消和确认按钮Text、以及对应按钮回调。
++ (void)showAlertTitle:(NSString *)title message:(NSString *)message cancelText:(NSString *)cancelText affirmText:(NSString *)affirmText cancelBlock:(completionblock)cancelBlock affirmblock:(completionblock)affirmblock alertShowcompletion:(completionblock)alertShowcompletion;
+//Alert提醒框、可设置取消和确认按钮Text、以及对应按钮回调。
++ (void)showAlertTitle:(NSString *)title message:(NSString *)message buttonsText:(NSArray<NSString *> *)buttonsText completionblock:(void(^)(NSInteger index))completionblock;
 //文本提醒,停留1.5s
 + (void)showText:(NSString *)text onView:(UIView *)view;
 //文本提醒，自定义图像，停留1.5s，完成后执行completion
 + (void)showText:(NSString *)text image:(UIImage *)image onView:(UIView *)view completion:(completionblock)completion;
-//文本提醒，自定义图像，停留1.5s，完成后执行completion
-//+ (void)showText:(NSString *)text customimage:(UIImage *)image imageSize onView:(UIView *)view completion:(completionblock)completion;
+//文本提醒，自定义图像，设置HUD大小 停留1.5s，完成后执行completion
++ (void)showText:(NSString *)text customeView:(UIView *)customeView HUDMinSize:(CGSize)minSize onView:(UIView *)view completion:(completionblock)completion;
 //文本提醒，停留1.5s，完成后执行completion
 + (void)showText:(NSString *)text onView:(UIView *)view completion:(completionblock)completion;
 //loading HUD,可带文字

@@ -10,5 +10,7 @@ target 'ZXDProgressHUD' do
     pod 'JLRoutes', '1.6'
     pod 'MBProgressHUD', '0.9.2'
     pod 'SVProgressHUD'
+    pod 'BlocksKit'
+    pod 'zhPopupController', '~> 1.0.2'
 
 end

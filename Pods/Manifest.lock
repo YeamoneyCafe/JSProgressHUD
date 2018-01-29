@@ -14,22 +14,42 @@ PODS:
   - AFNetworking/Serialization (3.1.0)
   - AFNetworking/UIKit (3.1.0):
     - AFNetworking/NSURLSession
+  - BlocksKit (2.2.5):
+    - BlocksKit/All (= 2.2.5)
+  - BlocksKit/All (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+    - BlocksKit/MessageUI
+    - BlocksKit/UIKit
+  - BlocksKit/Core (2.2.5)
+  - BlocksKit/DynamicDelegate (2.2.5)
+  - BlocksKit/MessageUI (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
+  - BlocksKit/UIKit (2.2.5):
+    - BlocksKit/Core
+    - BlocksKit/DynamicDelegate
   - JLRoutes (1.6)
   - MBProgressHUD (0.9.2)
   - SVProgressHUD (2.2.2)
+  - zhPopupController (1.0.2)
 
 DEPENDENCIES:
   - AFNetworking (= 3.1.0)
+  - BlocksKit
   - JLRoutes (= 1.6)
   - MBProgressHUD (= 0.9.2)
   - SVProgressHUD
+  - zhPopupController (~> 1.0.2)
 
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
   JLRoutes: 435d791422e96c9b9b5e1c4db1aedb3ae1b1a08f
   MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
   SVProgressHUD: 59b2d3dabacbd051576d21d32293ca7228dc18b0
+  zhPopupController: 411af38e63764130e4ae4ba5cde12c776dc84824
 
-PODFILE CHECKSUM: 2ff809ea42847461cae7b1a285a72bea0fc341d2
+PODFILE CHECKSUM: e72aac50c11a4d5db81951b4bae279f92a114007
 
 COCOAPODS: 1.4.0.beta.2
