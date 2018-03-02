@@ -12,5 +12,6 @@ target 'ZXDProgressHUD' do
     pod 'SVProgressHUD'
     pod 'BlocksKit'
     pod 'zhPopupController', '~> 1.0.2'
+    pod 'Aspects', '1.4.1'
 
 end

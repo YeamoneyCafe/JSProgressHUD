@@ -13,6 +13,9 @@
 #import "YMProgressHUD.h"
 #import "UIViewController+YMTool.h"
 #import "YMProductAssignApplyConfirmView.h"
+#import <BlocksKit+UIKit.h>
+#import "ZXDAlertTextFieldView.h"
+//#import <UIControl+BlocksKit.h>
 
 @interface ZXDHomeVC ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -140,8 +143,9 @@
         [YMProgressHUD showText:@"网络无法连接" customeView:customView HUDMinSize:CGSizeZero onView:self.view completion:nil];
     } else if (indexPath.section == 1)
     {
-        customView.frame = CGRectMake(0, 0, 40, 40);
-        [YMProgressHUD showText:@"加载中" customeView:customView HUDMinSize:CGSizeZero onView:self.view completion:nil];
+//        customView.frame = CGRectMake(0, 0, 40, 40);
+//        [YMProgressHUD showText:@"加载中" customeView:customView HUDMinSize:CGSizeZero onView:self.view completion:nil];
+        [YMProgressHUD showText:@"加载中" image:[UIImage imageNamed:@"login_infor_gesture"] onView:self.view completion:nil];
     } else if (indexPath.section == 2)
     {
         customView.frame = CGRectMake(0, 0, 40, 17);
@@ -192,13 +196,28 @@
             }
         }];
     } else if (indexPath.section == 9) {
-//        YMProductAssignApplyConfirmView* view = [YMProductAssignApplyConfirmView ym_viewWithFrame:CGRectMake(0, 0, 280, 239)];
         YMProductAssignApplyConfirmView* view = [[NSBundle mainBundle] loadNibNamed:NSStringFromClass([YMProductAssignApplyConfirmView class]) owner:nil options:nil].lastObject;
+        view.frame = CGRectMake(0, 0, 300, 300);
         view.center = CGPointMake(SCREEN_WIDTH/2, SCREEN_HEIGHT/2);
+        [view.cancelButton setTitle:@"Cancel" forState:UIControlStateNormal];
+        __weak YMProductAssignApplyConfirmView* weakView = view;
+        [view.cancelButton bk_addEventHandler:^(id sender) {
+            __strong YMProductAssignApplyConfirmView* strongView = weakView;
+            [strongView dismiss];
+        } forControlEvents:UIControlEventTouchUpInside];
+        
         [view show];
-        
     } else if (indexPath.section == 10) {
-        
+        ZXDAlertTextFieldView* view = [[NSBundle mainBundle] loadNibNamed:NSStringFromClass([ZXDAlertTextFieldView class]) owner:nil options:nil].lastObject;
+        view.frame = CGRectMake(0, 0, 270, 198);
+        view.center = CGPointMake(SCREEN_WIDTH/2, SCREEN_HEIGHT/2);
+        [view.cancelButton setTitle:@"Cancel" forState:UIControlStateNormal];
+        __weak ZXDAlertTextFieldView* weakView = view;
+        [view.cancelButton bk_addEventHandler:^(id sender) {
+            __strong ZXDAlertTextFieldView* strongView = weakView;
+            [strongView dismiss];
+        } forControlEvents:UIControlEventTouchUpInside];
+        [view show];
     }
 }
 

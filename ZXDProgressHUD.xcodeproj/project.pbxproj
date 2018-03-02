@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		B4477BED201F298E00B6E46F /* YMProductAssignApplyConfirmView.m in Sources */ = {isa = PBXBuildFile; fileRef = B4477BEA201F298E00B6E46F /* YMProductAssignApplyConfirmView.m */; };
 		B4477BEE201F298E00B6E46F /* YMProductAssignApplyConfirmView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4477BEC201F298E00B6E46F /* YMProductAssignApplyConfirmView.xib */; };
+		B4477BF120200A7900B6E46F /* ZXDAlertTextFieldView.m in Sources */ = {isa = PBXBuildFile; fileRef = B4477BF020200A7900B6E46F /* ZXDAlertTextFieldView.m */; };
+		B4477BF320200A9E00B6E46F /* ZXDAlertTextFieldView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B4477BF220200A9E00B6E46F /* ZXDAlertTextFieldView.xib */; };
+		B4477BF92021585000B6E46F /* MBProgressHUD+YMProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = B4477BF72021584F00B6E46F /* MBProgressHUD+YMProgressHUD.m */; };
 		B489187F201740BE00577DAF /* ZXDHomeView.m in Sources */ = {isa = PBXBuildFile; fileRef = B489187E201740BE00577DAF /* ZXDHomeView.m */; };
 		B4891882201874F700577DAF /* YMProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = B4891881201874F700577DAF /* YMProgressHUD.m */; };
 		B48918892019B29E00577DAF /* KeychainItemWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = B48918862019B29E00577DAF /* KeychainItemWrapper.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -39,6 +42,11 @@
 		B4477BEA201F298E00B6E46F /* YMProductAssignApplyConfirmView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YMProductAssignApplyConfirmView.m; sourceTree = "<group>"; };
 		B4477BEB201F298E00B6E46F /* YMProductAssignApplyConfirmView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YMProductAssignApplyConfirmView.h; sourceTree = "<group>"; };
 		B4477BEC201F298E00B6E46F /* YMProductAssignApplyConfirmView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = YMProductAssignApplyConfirmView.xib; sourceTree = "<group>"; };
+		B4477BEF20200A7900B6E46F /* ZXDAlertTextFieldView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZXDAlertTextFieldView.h; sourceTree = "<group>"; };
+		B4477BF020200A7900B6E46F /* ZXDAlertTextFieldView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZXDAlertTextFieldView.m; sourceTree = "<group>"; };
+		B4477BF220200A9E00B6E46F /* ZXDAlertTextFieldView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZXDAlertTextFieldView.xib; sourceTree = "<group>"; };
+		B4477BF72021584F00B6E46F /* MBProgressHUD+YMProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+YMProgressHUD.m"; sourceTree = "<group>"; };
+		B4477BF82021585000B6E46F /* MBProgressHUD+YMProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+YMProgressHUD.h"; sourceTree = "<group>"; };
 		B489187D201740BE00577DAF /* ZXDHomeView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZXDHomeView.h; sourceTree = "<group>"; };
 		B489187E201740BE00577DAF /* ZXDHomeView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZXDHomeView.m; sourceTree = "<group>"; };
 		B4891880201874F700577DAF /* YMProgressHUD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YMProgressHUD.h; sourceTree = "<group>"; };
@@ -189,11 +197,16 @@
 			children = (
 				B4891880201874F700577DAF /* YMProgressHUD.h */,
 				B4891881201874F700577DAF /* YMProgressHUD.m */,
+				B4477BF82021585000B6E46F /* MBProgressHUD+YMProgressHUD.h */,
+				B4477BF72021584F00B6E46F /* MBProgressHUD+YMProgressHUD.m */,
 				B4BA5F6B2015BE2800BBFF8F /* UIView+ZXDStatusHUD.h */,
 				B4BA5F6C2015BE2800BBFF8F /* UIView+ZXDStatusHUD.m */,
 				B4477BEB201F298E00B6E46F /* YMProductAssignApplyConfirmView.h */,
 				B4477BEA201F298E00B6E46F /* YMProductAssignApplyConfirmView.m */,
 				B4477BEC201F298E00B6E46F /* YMProductAssignApplyConfirmView.xib */,
+				B4477BEF20200A7900B6E46F /* ZXDAlertTextFieldView.h */,
+				B4477BF020200A7900B6E46F /* ZXDAlertTextFieldView.m */,
+				B4477BF220200A9E00B6E46F /* ZXDAlertTextFieldView.xib */,
 			);
 			path = ZXDStatusHUDView;
 			sourceTree = "<group>";
@@ -353,7 +366,7 @@
 				TargetAttributes = {
 					B4EC798120158E8200BBD8C9 = {
 						CreatedOnToolsVersion = 9.1;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -381,6 +394,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B4BA5F662015B8FB00BBFF8F /* icon.png in Resources */,
+				B4477BF320200A9E00B6E46F /* ZXDAlertTextFieldView.xib in Resources */,
 				B4EC799220158E8200BBD8C9 /* LaunchScreen.storyboard in Resources */,
 				B4BA5F63201597FF00BBFF8F /* Default-568h@2x.png in Resources */,
 				B4477BEE201F298E00B6E46F /* YMProductAssignApplyConfirmView.xib in Resources */,
@@ -460,9 +474,11 @@
 				B4BA5F742015BFDC00BBFF8F /* ZXDRootViewController.m in Sources */,
 				B4EC798720158E8200BBD8C9 /* AppDelegate.m in Sources */,
 				B489188A2019B29E00577DAF /* YMDevice.m in Sources */,
+				B4477BF120200A7900B6E46F /* ZXDAlertTextFieldView.m in Sources */,
 				B4BA5F772015C09500BBFF8F /* ZXDRootNavigationController.m in Sources */,
 				B489187F201740BE00577DAF /* ZXDHomeView.m in Sources */,
 				B4BA5F882015C2AE00BBFF8F /* ZXDWelcomeVC.m in Sources */,
+				B4477BF92021585000B6E46F /* MBProgressHUD+YMProgressHUD.m in Sources */,
 				B4BA5F7E2015C11600BBFF8F /* ZXDHomeVC.m in Sources */,
 				B4891882201874F700577DAF /* YMProgressHUD.m in Sources */,
 				B4BA5F6D2015BE2800BBFF8F /* UIView+ZXDStatusHUD.m in Sources */,
@@ -491,6 +507,75 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		B485D5742029968100609CE3 /* DailyBuild */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = DailyBuild;
+		};
+		B485D5752029968100609CE3 /* DailyBuild */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7CD0BF9DC80C06A1775CA8C4 /* Pods-ZXDProgressHUD.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ZXDProgressHUD/Supporting Files/ZXD-PrefixHeader.pch";
+				INFOPLIST_FILE = "ZXDProgressHUD/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = YeamoneyCafe.ZXDProgressHUD;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = DailyBuild;
+		};
 		B4EC799620158E8200BBD8C9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -600,8 +685,8 @@
 			baseConfigurationReference = 36D3FD0C7FA6634C3437EC84 /* Pods-ZXDProgressHUD.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = X5ZHND4URF;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/ZXDProgressHUD/Supporting Files/ZXD-PrefixHeader.pch";
@@ -610,6 +695,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = YeamoneyCafe.ZXDProgressHUD;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -619,8 +705,8 @@
 			baseConfigurationReference = 7CD0BF9DC80C06A1775CA8C4 /* Pods-ZXDProgressHUD.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = X5ZHND4URF;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/ZXDProgressHUD/Supporting Files/ZXD-PrefixHeader.pch";
@@ -629,6 +715,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = YeamoneyCafe.ZXDProgressHUD;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -641,6 +728,7 @@
 			buildConfigurations = (
 				B4EC799620158E8200BBD8C9 /* Debug */,
 				B4EC799720158E8200BBD8C9 /* Release */,
+				B485D5742029968100609CE3 /* DailyBuild */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -650,6 +738,7 @@
 			buildConfigurations = (
 				B4EC799920158E8200BBD8C9 /* Debug */,
 				B4EC799A20158E8200BBD8C9 /* Release */,
+				B485D5752029968100609CE3 /* DailyBuild */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

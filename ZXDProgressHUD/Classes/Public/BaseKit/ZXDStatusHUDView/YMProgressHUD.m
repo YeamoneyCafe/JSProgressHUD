@@ -10,6 +10,10 @@
 
 #import "YMDevice.h"
 #import "UIViewController+YMTool.h"
+#import "MBProgressHUD+YMProgressHUD.h"
+#import <objc/runtime.h>
+#import <Aspects.h>
+
 //文本提示停留时间
 static NSTimeInterval const YMProgressHUDTextDelay = 1.5;
 
@@ -151,11 +155,13 @@ typedef NS_ENUM(NSInteger, YMAPIErrorHUDType) {
         hud.removeFromSuperViewOnHide = YES;
         hud.mode = MBProgressHUDModeCustomView;
         hud.customView = [[UIImageView alloc] initWithImage:image];
+        hud.customView.frame = CGRectMake(0, 0, 28, 28);
         hud.detailsLabelText = text;
         [self setupHUD:hud];
         hud.completionBlock = completion;
         hud.minSize = CGSizeMake(120, 120);
         [finalView addSubview:hud];
+        [hud adjustCenterAfterLayout:hud text:text];
         [hud show:YES];
         [hud hide:YES afterDelay:YMProgressHUDTextDelay];
     });
@@ -167,7 +173,7 @@ typedef NS_ENUM(NSInteger, YMAPIErrorHUDType) {
     dispatch_async(dispatch_get_main_queue(), ^{
         UIView* finalView = [view isKindOfClass:[UIWindow class]] ? view : [UIApplication sharedApplication].delegate.window;
         MBProgressHUD* hud = [[MBProgressHUD alloc] initWithView:finalView];
-        hud.touchbeg = YES;
+//        hud.touchbeg = YES;
         hud.removeFromSuperViewOnHide = YES;
         hud.mode = MBProgressHUDModeCustomView;
         hud.customView = customeView;
@@ -177,8 +183,7 @@ typedef NS_ENUM(NSInteger, YMAPIErrorHUDType) {
         hud.completionBlock = completion;
         [self setupHUD:hud];
         [finalView addSubview:hud];
-        [hud setNeedsLayout];
-        [hud layoutSubviews];
+        [hud adjustCenterAfterLayout:hud];
         [hud show:YES];
         [hud hide:YES afterDelay:YMProgressHUDTextDelay];
     });
@@ -276,6 +281,29 @@ typedef NS_ENUM(NSInteger, YMAPIErrorHUDType) {
     }
 }
 
+#pragma mark -- Privat Method
+
++ (void)adjustCenterAfterLayout:(MBProgressHUD *)hud text:(NSString *)text
+{
+    [self aspect_hookSelector:@selector(layoutSubviews) withOptions:AspectPositionAfter usingBlock:^(id<AspectInfo> info) {
+        CGRect rect = hud.customView.frame;
+        rect.origin.y -= 8;
+        hud.customView.frame = rect;
+        for (id obj in hud.subviews) {
+            if ([obj isMemberOfClass:[UILabel class]]) {
+                NSString* objText = [obj objectForKey:@"text"];
+                if ([objText isEqualToString:text]) {
+                    UILabel* label = obj;
+                    CGRect rect = label.frame;
+                    rect.origin.y += 8;
+                    label.frame = rect;
+                }
+                
+            }
+        }
+    } error:NULL];
+    
+}
 
 @end
 
